@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<!--To Do List:
+* Create Table Breaks to Organize What It Looks Like
+* Continue to Catch Up with the Lessons
+* Create a Better CSS StyleSheet-->
+<head>
+  <title>HTML/CSS Cheat Sheet</title>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>HTML/CSS Cheat Sheet</h1>
+    <h2>Introduction to HTML</h2>
+    
+    <!--basic introduction to what HTML is and this website-->
+    <ul>
+        <li>HTML stands for HyperText Markup Language and is used to 
+            create the structure and content of a webpage.</li> 
+        <li>CSS can change the look of HTML elements. In order 
+            to do this, CSS must select HTML elements, then apply 
+            styles to them.</li>  
+        <li>JS is a programming language that powers the dynamic 
+            behavior on most websites. There are seven data types:
+            numbers, strings, boolean, floats, undefined, null, object.
+        </li>
+    </ul>
+    <br></br>
+
+
+    <!--HTML Element Table-->
+    <table>
+        <!---HTML Element Table Header-->
+        <thead>
+            <tr>
+                <th>HTML Element</th>
+                <th>Description</th>
+                <th>Common Attributes</th>
+            </tr>
+        </thead>
+        <!--HTML Element Table Body-->
+        <tbody>
+            <!--Basic Header Element Tags-->
+            <div>
+                <tr>
+                    <td>!DOCTYPE html</td>
+                    <td>tells the browser what version of HTML to run</td>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td>should contain all HTML code</td>
+                </tr>
+                <tr>
+                    <td>head</td>
+                    <td>info about the webpage: title, css etc. belong here</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>creates the webpage title, appears in browser tab</td>
+                </tr>
+            </div>
+            <!--Organizational Body Element tags-->
+            <div>
+            <tr>
+                <td>header</td>
+                <td>defines the header of the visible content, usually the 
+                    navigation is included in here
+                </td>
+            </tr>
+            <tr>
+                <td>nav</td>
+                <td>creates the navigation bar</td>
+            </tr>
+            <tr>
+                <td>main</td>
+                <td>this is the "body" of the body. displays the main part of the page</td>
+            </tr>
+            <tr>
+                <td>section</td>
+                <td>holds content into a categorization such as articles, blogs, comments etc</td>
+            </tr>
+            <tr>
+                <td>aside</td>
+                <td>has info that is related to the main content but 
+                    not required for understanding
+                </td>
+            </tr>
+            <tr>
+                <td>figure</td>
+                <td> encapsulates media and is often used with figcaption 
+                    (to caption the media)
+                </td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>Visible content should be placed within
+                    the opening and closing tags.
+                </td>
+            </tr>
+            <tr>
+                <td>span or div</td>
+                <td>specifies a block of code. often used to apply
+                    attributes to blocks of code or assign an id/class
+                </td>
+                <td>style, id, class</td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>creates a line break</td>
+            </tr>
+            <tr>
+                <td>!--- comment --</td>
+                <td>creates a comment</td>
+            </tr>
+            </div>
+            <!--Basic Text Element Tags-->
+            <div>
+                <tr>
+                    <td>h1 to h6</td>
+                    <td>Headings/subheadings. These enlarge titles.</td>
+                    <td>style, id, class</td>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>this creates a text block</td>
+                    <td>style, id, class</td>
+                </tr>
+                <tr>
+                    <td>em or strong</td>
+                    <td>italicize or bold, respectively</td>
+                </tr>
+                
+                <tr>
+                    <td>ol and ul</td>
+                    <td>ordered (numbered) list and unordered(bulleted) list</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>anchor tag, used to link to internal, external or same page</td>
+                    <td>href*</td>
+                </tr>
+            </div>
+            <!--Basic Media Element Tags-->
+            <div>
+                <tr>
+                    <td>img</td>
+                    <td>used to display an image</td>
+                    <td>src*, alt </td>
+                </tr>
+                <tr>
+                    <td>video</td>
+                    <td>used to display video</td>
+                    <td>src*, controls*, alt, width, height</td>
+                </tr>
+                <tr>
+                    <td>audio</td>
+                    <td>used to display audio, often used with source tag</td>
+                    <td>controls, src (unless source tag is used with type attribute)</td>
+                </tr>
+                <tr>
+                    <td>embed</td>
+                    <td>used to embed media from external sources</td>
+                    <td>src</td>
+                </tr>
+            </div>
+            <!--Table Element Tags-->
+            <div>
+                <tr>
+                    <td>tr</td>
+                    <td>creates table row</td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td>creates table data/cell</td>
+                </tr>
+                <tr>
+                    <td>th</td>
+                    <td>creates table heading in that table cell</td>
+                </tr>
+                <tr>
+                    <td>thead</td>
+                    <td>designates the head of the table</td>
+                </tr>
+                <tr>
+                    <td>tbody</td>
+                    <td>designates the body of the table</td>
+                </tr>
+                <tr>
+                    <td>tfooter</td>
+                    <td>designates the footer of the table</td>
+                </tr>
+            </div>
+            <!--Form Element Tags-->
+            <div>
+                <tr>
+                    <td>form</td>
+                    <td>allow users to input information and send it</td>
+                    <td>action*, method*</td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>allows users to input information. if you set the type attribute equal to:
+                        <ul>
+                            <li>"text" - single row field for text input</li>
+                            <li>"password" - single row field that censors input</li>
+                            <li>"number" - single row field for number input</li>
+                            <li>"range" - creates a slider to select from number range. used with min and max attributes</li>
+                            <li>"checkbox" - creates a single checkbox (multiple options)</li>
+                            <li>"radio" - creates a single radio (one option only)</li>
+                            <li>"list" - will pair to datalist element instead of form</li>
+                            <li>"submit" - will create a submit button</li>
+                        </ul>
+                        the first six pair to form
+                    </td>
+                    <td>type*, name, value, id</td>
+                </tr>
+                <tr>
+                    <td>select</td>
+                    <td>creates a dropdown list populated from multiple option tags nested under</td>
+                    <td>id</td>
+                </tr>
+                <tr>
+                    <td>datalist</td>
+                    <td>creates a searchable dropdown list from multiple option tags, works with input</td>
+                    <td>id</td>
+                </tr>
+                <tr>
+                    <td>option</td>
+                    <td>creates an option in select or datalist</td>
+                    <td>value*</td>
+                </tr>
+                <tr>
+                    <td>textarea</td>
+                    <td>creates a text-box multi-line input</td>
+                    <td>rows, cols</td>
+                </tr>
+                <tr>
+                    <td>label</td>
+                    <td>creates a label for the form question, can be matched by using ID</td>
+                    <td>for</td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+    <p>*These are mandatory attributes.</p>
+    <br></br>
+
+
+    <!--CSS Attribute Table-->
+    <table>
+        <!---CSS Attribute Table Header-->
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <!--CSS Attribute Table Body-->
+        <tbody>
+            <tr>
+                <td>style</td>
+                <td>add CSS style to the element</td>
+            </tr>
+            <!--Specificity of an Element-->
+            <div>
+                <tr>
+                    <td>id</td>
+                    <td>most specific way of identifying an element besides important</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>a specific way to identify an element. if the element is identified
+                        by an ID, that code will take precedence over class code.
+                    </td>
+                </tr>
+                <tr>
+                    <td>!important</td>
+                    <td>this is not an attribute but a flag. 
+                        it will override any specificity of style
+                    </td>
+                </tr>
+            </div>
+            <!--Media-->
+            <div>
+                <tr>
+                    <td>src</td>
+                    <td>links to the source. be sure to use "" around the source</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>displays alternative text if media cannot be displayed. use quotes</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>adds video controls to video, such as play, pause, volume</td>
+                </tr>
+                <tr>
+                    <td>width and height</td>
+                    <td>gives media a width and a height</td>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>include link in quotes, if linking ID use a hashtag</td>
+                </tr>
+            </div>
+            <!--Table-->
+            <div>
+                <tr>
+                    <td>colspan</td>
+                    <td>allows a data cell to span multiple columns, set equal to a #</td>
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td>allows a data cell to span multiple rows, set equal to a #</td>
+                </tr>
+            </div>
+            <!--Form-->
+            <div>
+                <tr>
+                    <td>action</td>
+                    <td>links to where information (from a form, etc.) goes</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>determines how the information is sent and processed</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>the field that accepts input</td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>the input value, assigned to name</td>
+                </tr>
+                <tr>
+                    <td>list</td>
+                    <td>calls out a list</td>
+                </tr>
+                <tr>
+                    <td>for</td>
+                    <td>helps to match an element to another by matching for with an id</td>
+                </tr>
+                <tr>
+                    <td>rows amd cols</td>
+                    <td>creates the rows and columns in a textbox area</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>can define what type of form, can define what a link may be (CSS stylesheet)</td>
+                </tr>
+                <tr>
+                    <td>min or max</td>
+                    <td>to create a minimum and maximum, often used for range forms</td>
+                </tr>
+                <tr>
+                    <td>step</td>
+                    <td>creates the amount of increments on a range slider on a form</td>
+                </tr>
+                <tr>
+                    <td>required</td>
+                    <td>makes a form required</td>
+                </tr>
+                <tr>
+                    <td>maxlength or minlength</td>
+                    <td>creates a max/min number of characters in a text field</td>
+                </tr>
+                <tr>
+                    <td>pattern</td>
+                    <td>creates a set of restriction and makes certain that input falls into pattern (i.e. uppercase)</td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+    <br>
+
+
+    <!--CSS Property Table-->
+    <table>
+        <thead>
+            <tr>
+                <th>CSS Property</th>
+                <th>Description</th>
+                <th>Example Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Font-->
+            <div>
+                <tr>
+                    <td>font-family</td>
+                    <td>typeface of the element</td>
+                    <td>Helvetica</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>size of the text displayed</td>
+                    <td>18px</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>how thin or thick text is displayed</td>
+                    <td>bold or 100</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>places text in the left, right or center</td>
+                    <td>right, left, or center</td>
+
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>color of text</td>
+                    <td>seafoamgreen</td>
+
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>color behind the text</td>
+                    <td>blue</td>
+                </tr>
+
+            </div>
+            <!--Visual Element(Media, Text, Video)-->
+            <div>
+                <tr>
+                    <td>opacity</td>
+                    <td>sets opacity of an obj</td>
+                    <td>0 (transparent) to 1</td>
+                </tr>
+                <tr>
+                    <td>background-image</td>
+                    <td>sets the background of an element to an image</td>
+                    <td>url("xyz.com")</td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+
+    <!--JavaScript-->
+    <table>
+        <thead>
+            <tr>
+                <th>JS Variable/Object</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Variables-->
+            <div>
+                <tr>
+                    <td>var</td>
+                    <td>used to declare a variable before the ES6
+                        version.
+                    </td>
+                </tr>
+                <tr>
+                    <td>let</td>
+                    <td>declare variable that can be reassigned value</td>
+                </tr>
+                <tr>
+                    <td>const</td>
+                    <td>declare a variable w/ constant value</td>
+                </tr>
+            </div>
+            <!--Operator-->
+            <div>
+                <tr>
+                    <td>+, -, *, /, %</td>
+                    <td>addition, subtraction, multiplication, division,
+                        modulus
+                    </td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td>access properties and methods. a library 
+                        can be accessed if it comes before the ., 
+                        once its accessed all the methods in that
+                        library can be accessed on that line
+                    </td>
+                    <td>Math.random()</td>
+                </tr>
+                <tr>
+                    <td>//</td>
+                    <td>creates a single line comment</td>
+                </tr>
+                <tr>
+                    <td>${expression}</td>
+                    <td>string interpolation, can insert a string
+                        into another string using template literals
+                    </td>
+                    <td>console.log(`text text ${}`)</td>
+                </tr>
+                <tr>
+                    <td>+=, -=, *=, /=</td>
+                    <td>shorthand of applying an operation to an existing var</td>
+                    <td>4 += 4 computes to 8</td>
+                </tr>
+            </div>
+            <!--Property-->
+            <div>
+                <tr>
+                    <td>.length</td>
+                    <td>gives length of the string</td>
+                </tr>
+            </div>
+            <!--Method-->
+            <div>
+                <tr>
+                    <td>console.log()</td>
+                    <td>prints message to the console</td>
+                    <td>console.log('xyz')</td>
+                </tr>
+                <tr>
+                    <td>.toUpperCase()</td>
+                    <td>changes string to uppercase</td>
+                    <td>'string'.toUpperCase()</td>
+                </tr>
+            </div>
+
+        </tbody>
+    </table>
+        
+
+</body>
+</html>

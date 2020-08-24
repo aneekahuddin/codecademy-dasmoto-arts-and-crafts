@@ -1,0 +1,136 @@
+
+body {
+    background-color: black;
+    color: seashell;
+    font-family:Helvetica;
+    font-size: 22px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p{
+font-size: 0.75em;
+}
+h3{
+    font-size:0.8em;
+    font-weight:bold;
+}
+h2{
+    font-size: 1em;
+}
+h4{
+    font-size:0.75em;
+}
+.banner-sub{
+    margin-block-end: 0em;
+    margin-block-start: 0.5em;
+}
+.bannertxt{
+    font-size: 1.33em;
+    margin-block-end:0.5em ;
+}
+header{
+    border-bottom: 1px solid seashell;
+    height:69px;
+    text-align:right;
+}
+a{
+    display:inline-block;
+    text-align:center;
+    text-decoration:underline;
+    padding: 0 10px;
+    align-items: right;
+    text-size: 1.5em;
+
+}
+.frontimage{
+    background: url("/Images/img-mission-background.jpg");
+    height:700px;
+    width:1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+}
+.banner{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.featured-tea{
+    width:1000px; 
+    display:block;
+    align-self: center;
+  
+    
+}
+.featured-tea h2, h4{
+    text-align: center;
+}
+.cards{
+    
+    width: 1000px;
+    display:inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.pic{
+    
+    height: 200px ;
+    width: 300px;
+    margin:0;
+
+
+}
+figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+figcaption{
+    text-align: center;
+    align-items: center;
+    font-size:0.75em;
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.Locations{
+    background: url("/Images/img-locations-background.jpg");
+ 
+    height:500px;
+    width:1200px;
+    background-size:cover;
+    text-align:center;
+}
+.location-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:300px;
+    align-items:center;
+
+}
+.stores{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.copyright{
+    margin-left:20px;
+}
+h5{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
